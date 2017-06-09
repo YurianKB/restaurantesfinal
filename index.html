@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>GoogleMapsYu</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<h1>Garnachas MX</h1>
+			</div>
+		</div>
+	</nav>
+</head>
+
+<body>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="map"></div>
+			<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIOSwjaWKw-HyimZ2JFEvWV0dkv4C8EDk"></script>
+			<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+			<script src="./js/app.js"></script>
+		</div>
+		<div class="row buscadorComida">
+			<div class="col-md-12">
+				<div>
+					<div class="col-lg-6 listaRestaurantes">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Nombre de Restaurante...">
+							<span class="input-group-btn">
+		        	  <button class="btn btn-default" type="button">Buscar</button>
+		      	  </span>
+						</div>
+					</div>
+				</div>
+
+				<div class="media map" id="map">
+					<div class="media-left">
+						<img class="media-object" src="image/unnamed.jpg" alt="...">
+					</div>
+					<div class="media-body lugares">
+						<h4 class="media-heading restaurante" data-latitud="19.4124033" data-longitud="-99.1580568">Restaurante "La Roma"</h4> Mérida 243, C. U. Benito Juárez, 06700 Ciudad de México, CDMX
+					</div>
+				</div>
+
+				<div class="media map" id="map">
+					<div class="media-left">
+						<img class="media-object" src="image/2016-09-24.jpg" alt="...">
+					</div>
+					<div class="media-body lugares">
+						<h4 class="media-heading restaurante" data-latitud="19.4128247" data-longitud="-99.1606755">Helado Oscuro</h4>Orizaba 203, Roma Nte., 06700 Ciudad de México, CDMX
+					</div>
+				</div>
+				<div class="media map" id="map">
+					<div class="media-left">
+						<img class="media-object" src="image/TSUN.jpg" alt="...">
+					</div>
+					<div class="media-body lugares">
+						<h4 class="media-heading restaurante" data-latitud="19.41652" data-longitud="-99.1718387">Pizza del Perro Negro</h4> Parque España 3, Roma Nte., 06700 Ciudad de México, CDMX
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
+	<script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+
+</html>
